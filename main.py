@@ -1,5 +1,5 @@
 from imutils.video import FileVideoStream
-from UI import Text
+from ui import Text
 from imutils.video import FPS
 import numpy as np
 import imutils
@@ -44,6 +44,7 @@ while fvs.more():
     # Detecting objects
     blob = cv2.dnn.blobFromImage(frame, 0.00055, (416, 416), (0, 0, 0), True, crop=False)
     net.setInput(blob)
+    print(net.forward())
     outs = net.forward(output_layers)
 
     class_ids = []
