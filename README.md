@@ -28,7 +28,7 @@ Starting the python script use the following command.
 ````bash
 python main.py
 ````
-##Controlls:
+## Controlls:
 **There are the following commands:**
 
 * To quit use: ``q ``
